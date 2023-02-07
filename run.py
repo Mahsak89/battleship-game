@@ -12,7 +12,8 @@ class GameBoard:
         for row in self.board:
             print("%d|%s|" % (row_number, "|".join(row)))
             row_number += 1
-        
-       
-        
-    
+            
+                      
+computer_board = GameBoard([[" "] * 5 for i in range(5)])
+
+
