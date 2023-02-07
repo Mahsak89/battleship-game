@@ -15,5 +15,6 @@ class GameBoard:
             
                       
 computer_board = GameBoard([[" "] * 5 for i in range(5)])
+GameBoard.print_board((computer_board))
 
 
