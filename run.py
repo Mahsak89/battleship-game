@@ -82,9 +82,6 @@ Battleship.create_ships(computer_board)
 Battleship.create_ships(player_board)
 print("where the computer's battleships are hidden")
 GameBoard.print_board(player_board)
-print("your guess board")
-GameBoard.print_board(player_guess_board)
-
 
 # GameBoard.print_board((computer_board))
 # main game logic
@@ -92,6 +89,8 @@ while True:
     # user turn
     while True:
         print('Guess a battleship location')
+        print("your guess board")
+        GameBoard.print_board(player_guess_board)
         # get user input
         player_row, player_column = Battleship.get_user_input(object)
 
@@ -105,13 +104,16 @@ while True:
         if computer_board.board[player_row][player_column] == "X":
             print("You sunk one of my ships!")
             player_guess_board.board[player_row][player_column] = "X"
+            print('your guess board')
             GameBoard.print_board(player_guess_board)
             break
         else:
             print("You missed my battleship!")
             player_guess_board.board[player_row][player_column] = "-"
+            print('your guess board')
             GameBoard.print_board(player_guess_board)
             break
+        
     # check if the user wins or not
     if Battleship.count_ruined_ships(player_guess_board) == 5:
         GameBoard.print_board(player_guess_board)
@@ -120,7 +122,7 @@ while True:
         break
     # computer turn
     while True:
-        print('Computer guesses')
+        print('Computer guess board')
 
         # make computer guess randomly
         computer_row = random.randint(0, 4)
