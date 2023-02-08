@@ -9,8 +9,9 @@ class GameBoard:
     """
     def __init__(self, board):
         self.board = board
-          
+        
     def print_board(self):
+        # visualise the board 
         print("  1 2 3 4 5")
         row_number = 1
         for row in self.board:
@@ -45,4 +46,11 @@ player_guess_board = GameBoard([[" "] * 5 for i in range(5)])
 player_board = GameBoard([[" "] * 5 for i in range(5)])
 computer_guess_board = GameBoard([[" "] * 5 for i in range(5)])
 Battleship.create_ships(computer_board)
-GameBoard.print_board((computer_board))
+Battleship.create_ships(player_board)
+print("where the computer's battleships are hidden")
+GameBoard.print_board(player_board)
+print("your guess board")
+GameBoard.print_board(player_guess_board)
+
+
+# GameBoard.print_board((computer_board))
