@@ -108,7 +108,10 @@ while True:
             player_guess_board.board[player_row][player_column] = "-"
             GameBoard.print_board(player_guess_board)
             break
-        
-        
-        
-        
+    # check if the user wins or not
+    if Battleship.count_ruined_ships(player_guess_board) == 5:
+        GameBoard.print_board(player_guess_board)
+        print("You won!")
+        print("You hit all 5 battleships!")
+        break
+     
