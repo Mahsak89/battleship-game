@@ -113,11 +113,15 @@ while True:
         print("You won!")
         print("You guessed all 5 battleships!")
         break
-    
+    # computer turn
     while True:
         print('Computer guesses')
         
         # make computer guess randomly
         computer_row = random.randint(0, 4)
         computer_column = random.randint(0, 4)
-     
+        # check if the computer chose the same location or not
+        while computer_guess_board.board[computer_row][computer_column] == "-" or computer_guess_board.board[computer_row][computer_column] == "X":
+            computer_row = random.randint(0, 4)
+            computer_column = random.randint(0, 4)
+            
