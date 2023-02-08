@@ -124,4 +124,14 @@ while True:
         while computer_guess_board.board[computer_row][computer_column] == "-" or computer_guess_board.board[computer_row][computer_column] == "X":
             computer_row = random.randint(0, 4)
             computer_column = random.randint(0, 4)
+        # check if the user guesses the ships location correct or not
+        if player_board.board[computer_row][computer_column] == "X":
+            computer_guess_board.board[computer_row][computer_column] = "X"
+            GameBoard.print_board(computer_guess_board)
+            break
+        else:
+            computer_guess_board.board[computer_row][computer_column] = "-"
+            GameBoard.print_board(computer_guess_board)
+            break
+    
             
