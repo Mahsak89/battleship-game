@@ -37,6 +37,16 @@ class Battleship:
                 self.column = random.randint(0, 4)
             self.board[self.row][self.column] = "X"
         return self.board
+    
+    def get_user_input(self):
+        while True:
+         
+            x_row = input("Enter the row of the ship:(1-5) ")
+            if x_row in '12345':
+                x_row = int(x_row) - 1
+                break
+            else:
+                print('Enter a valid number between 1-5')
 
 
 # create to type of board for each gamer : the guess board
