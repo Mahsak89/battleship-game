@@ -133,5 +133,9 @@ while True:
             computer_guess_board.board[computer_row][computer_column] = "-"
             GameBoard.print_board(computer_guess_board)
             break
-    
+    # check if computer won or not
+    if Battleship.count_ruined_ships(computer_guess_board) == 5:
+        GameBoard.print_board(computer_guess_board)
+        print("Sorry, the computer won.")
+        break
             
