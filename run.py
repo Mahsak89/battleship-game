@@ -73,3 +73,11 @@ GameBoard.print_board(player_guess_board)
 
 
 # GameBoard.print_board((computer_board))
+# main game logic
+while True:
+    while True:
+        print('Guess a battleship location')
+        # get user input
+        player_row = Battleship.get_user_input(object)
+        player_column = Battleship.get_user_input(object)
+        
