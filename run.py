@@ -12,9 +12,12 @@ class GameBoard:
         for row in self.board:
             print("%d|%s|" % (row_number, "|".join(row)))
             row_number += 1
-            
-                      
+
+
+class Battleship:
+    def __init__(self, board):
+        self.board = board
+
+                   
 computer_board = GameBoard([[" "] * 5 for i in range(5)])
 GameBoard.print_board((computer_board))
-
-
