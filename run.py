@@ -56,6 +56,15 @@ class Battleship:
             else:
                 print('Enter a valid number between 1-5')
         return row, column
+    
+    def count_ruined_ships(self):
+        # count how many ship were guessed correctly
+        ruined_ships = 0
+        for row in self.board:
+            for column in row:
+                if column == "X":
+                    ruined_ships += 1
+        return ruined_ships
 
 
 # create to type of board for each gamer : the guess board
@@ -75,6 +84,7 @@ GameBoard.print_board(player_guess_board)
 # GameBoard.print_board((computer_board))
 # main game logic
 while True:
+    # user turn
     while True:
         print('Guess a battleship location')
         # get user input
@@ -86,4 +96,6 @@ while True:
             print("You guessed that one already")
             player_row = Battleship.get_user_input(object)
             player_column = Battleship.get_user_input(object)
+        
+        
         
