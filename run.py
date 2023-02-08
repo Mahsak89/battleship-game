@@ -42,7 +42,7 @@ class Battleship:
     def get_user_input(self):
         while True:
          
-            row = input("Enter the row of the ship:(1-5) ")
+            row = input("Enter the row of the ship(1-5): ")
             if row in '12345':
                 row = int(row) - 1
                 break
@@ -50,7 +50,7 @@ class Battleship:
                 print('Enter a valid number between 1-5')
         while True:
              
-            column = input("Enter the row of the ship:(1-5) ")
+            column = input("Enter the column of the ship(1-5): ")
             if column in '12345':
                 column = int(column) - 1
                 break
@@ -92,8 +92,7 @@ while True:
         player_row = Battleship.get_user_input(object)
         player_column = Battleship.get_user_input(object)
         # check if the user entered the same location or not
-        while (player_guess_board.board[player_row][player_column] == "-" or
-               player_guess_board.board[player_row][player_column] == "X"):
+        while player_guess_board.board[player_row][player_column] == "-" or player_guess_board.board[player_row][player_column] == "X":
             print("You guessed that one already")
             player_row = Battleship.get_user_input(object)
             player_column = Battleship.get_user_input(object)
@@ -112,6 +111,13 @@ while True:
     if Battleship.count_ruined_ships(player_guess_board) == 5:
         GameBoard.print_board(player_guess_board)
         print("You won!")
-        print("You hit all 5 battleships!")
+        print("You guessed all 5 battleships!")
         break
+    
+    while True:
+        print('Computer guesses')
+        
+        # make computer guess randomly
+        computer_row = random.randint(0, 4)
+        computer_column = random.randint(0, 4)
      
