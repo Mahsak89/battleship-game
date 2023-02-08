@@ -37,6 +37,11 @@ class Battleship:
             self.board[self.row][self.column] = "X"
         return self.board
 
-                 
+
+# create to type of board for each gamer : the guess board
+# and the one with the ships place on it                 
 computer_board = GameBoard([[" "] * 5 for i in range(5)])
+player_guess_board = GameBoard([[" "] * 5 for i in range(5)])
+player_board = GameBoard([[" "] * 5 for i in range(5)])
+computer_guess_board = GameBoard([[" "] * 5 for i in range(5)])
 GameBoard.print_board((computer_board))
