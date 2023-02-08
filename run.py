@@ -5,6 +5,8 @@ import random
 
 
 class GameBoard:
+    """making and printing the game board
+    """
     def __init__(self, board):
         self.board = board
           
@@ -17,12 +19,15 @@ class GameBoard:
 
 
 class Battleship:
+    """ 
+    making the battleship class to craet and guess the ships location
+    """
     
     def __init__(self, board):
         self.board = board
     
     def create_ships(self):
-        #creat five random ships for both the user and the computer
+        # creat five random ships for both the user and the computer
         for ship in range(5):
             self.row = random.randint(0, 4)
             self.column = random.randint(0, 4)
