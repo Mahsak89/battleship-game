@@ -9,9 +9,9 @@ class GameBoard:
     """
     def __init__(self, board):
         self.board = board
-        
+
     def print_board(self):
-        # visualise the board 
+        # visualise the board
         print("  1 2 3 4 5")
         row_number = 1
         for row in self.board:
@@ -21,13 +21,13 @@ class GameBoard:
 
 
 class Battleship:
-    """ 
+    """
     making the battleship class to craet and guess the ships location
     """
-    
+
     def __init__(self, board):
         self.board = board
-    
+
     def create_ships(self):
         # creat five random ships for both the user and the computer
         for ship in range(5):
@@ -38,7 +38,7 @@ class Battleship:
                 self.column = random.randint(0, 4)
             self.board[self.row][self.column] = "X"
         return self.board
-    
+
     def get_user_input(self):
         while True:
             try:
@@ -51,7 +51,7 @@ class Battleship:
             except ValueError:
                 print('Enter a valid number between 1-5')
         while True:
-            try: 
+            try:
                 column = input("Enter the column of the ship(1-5): ")
                 if column in '12345':
                     column = int(column) - 1
@@ -61,7 +61,7 @@ class Battleship:
             except ValueError:
                 print('Enter a valid number between 1-5')
         return row, column
-    
+
     def count_ruined_ships(self):
         # count how many ship were guessed correctly
         ruined_ships = 0
@@ -73,7 +73,7 @@ class Battleship:
 
 
 # create to type of board for each gamer : the guess board
-# and the one with the ships place on it                 
+# and the one with the ships place on it.
 computer_board = GameBoard([[" "] * 5 for i in range(5)])
 player_guess_board = GameBoard([[" "] * 5 for i in range(5)])
 player_board = GameBoard([[" "] * 5 for i in range(5)])
@@ -94,9 +94,9 @@ while True:
         print('Guess a battleship location')
         # get user input
         player_row, player_column = Battleship.get_user_input(object)
-        
+
         # check if the user entered the same location or not
-        while (player_guess_board.board[player_row][player_column] == "-" or 
+        while (player_guess_board.board[player_row][player_column] == "-" or
                player_guess_board.board[player_row][player_column] == "X"):
             print("You guessed that one already")
             player_row = Battleship.get_user_input(object)
@@ -121,13 +121,14 @@ while True:
     # computer turn
     while True:
         print('Computer guesses')
-        
+
         # make computer guess randomly
         computer_row = random.randint(0, 4)
         computer_column = random.randint(0, 4)
         # check if the computer chose the same location or not
         while (computer_guess_board.board[computer_row][computer_column] == "-"
-               or computer_guess_board.board[computer_row][computer_column] == "X"):
+               or computer_guess_board.board[computer_row][computer_column] ==
+               "X"):
             computer_row = random.randint(0, 4)
             computer_column = random.randint(0, 4)
         # check if the user guesses the ships location correct or not
@@ -144,4 +145,3 @@ while True:
         GameBoard.print_board(computer_guess_board)
         print("Sorry, the computer won.")
         break
-            
