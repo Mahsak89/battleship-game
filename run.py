@@ -15,6 +15,7 @@ class GameBoard:
         print("  1 2 3 4 5")
         row_number = 1
         for row in self.board:
+            # learned from youtube
             print("%d|%s|" % (row_number, "|".join(row)))
             row_number += 1
 
@@ -96,6 +97,18 @@ while True:
             print("You guessed that one already")
             player_row = Battleship.get_user_input(object)
             player_column = Battleship.get_user_input(object)
+        # check if the user guesses the ships location correct or not
+        if computer_board.board[player_row][player_column] == "X":
+            print("You sunk one of my ships!")
+            player_guess_board.board[player_row][player_column] = "X"
+            GameBoard.print_board(player_guess_board)
+            break
+        else:
+            print("You missed my battleship!")
+            player_guess_board.board[player_row][player_column] = "-"
+            GameBoard.print_board(player_guess_board)
+            break
+        
         
         
         
