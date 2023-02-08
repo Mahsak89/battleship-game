@@ -80,4 +80,10 @@ while True:
         # get user input
         player_row = Battleship.get_user_input(object)
         player_column = Battleship.get_user_input(object)
+        # check if the user entered the same location or not
+        while (player_guess_board.board[player_row][player_column] == "-" or
+               player_guess_board.board[player_row][player_column] == "X"):
+            print("You guessed that one already")
+            player_row = Battleship.get_user_input(object)
+            player_column = Battleship.get_user_input(object)
         
