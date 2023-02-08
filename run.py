@@ -74,6 +74,13 @@ class Battleship:
 
 # create to type of board for each gamer : the guess board
 # and the one with the ships place on it.
+print("THE RULES OFF THE GAME:")
+print("There is 5 hidden ships for both (You and the computer) in the other" +
+      " player board")
+print("Whoever guessess the  location of the whole 5 ships correctly " +
+      "will be the winner.")
+print("If you guess wrongly it will be shown with (-)")
+print("And if you guess correctly it will be shown with (X)")
 computer_board = GameBoard([[" "] * 5 for i in range(5)])
 player_guess_board = GameBoard([[" "] * 5 for i in range(5)])
 player_board = GameBoard([[" "] * 5 for i in range(5)])
@@ -89,7 +96,6 @@ while True:
     # user turn
     while True:
         print('Guess a battleship location')
-        print("your guess board")
         GameBoard.print_board(player_guess_board)
         # get user input
         player_row, player_column = Battleship.get_user_input(object)
@@ -113,7 +119,7 @@ while True:
             print('your guess board')
             GameBoard.print_board(player_guess_board)
             break
-        
+
     # check if the user wins or not
     if Battleship.count_ruined_ships(player_guess_board) == 5:
         GameBoard.print_board(player_guess_board)
