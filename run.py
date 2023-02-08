@@ -41,12 +41,21 @@ class Battleship:
     def get_user_input(self):
         while True:
          
-            x_row = input("Enter the row of the ship:(1-5) ")
-            if x_row in '12345':
-                x_row = int(x_row) - 1
+            row = input("Enter the row of the ship:(1-5) ")
+            if row in '12345':
+                row = int(row) - 1
                 break
             else:
                 print('Enter a valid number between 1-5')
+        while True:
+             
+            column = input("Enter the row of the ship:(1-5) ")
+            if column in '12345':
+                column = int(column) - 1
+                break
+            else:
+                print('Enter a valid number between 1-5')
+        return row, column
 
 
 # create to type of board for each gamer : the guess board
