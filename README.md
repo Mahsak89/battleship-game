@@ -45,5 +45,40 @@ The winner is the player who sinks all of their opponent's battleships first.
 ***
 ## Deployment
 ***
+This project was deployed using Code Institute's mock terminal for Heroku. Below are the steps I followed to be able to deploy the terminal to the website:
+
+  1.Create a new Heroku app on the Heroku website.
+  2.Set config vars: Port and give it a value of 8000.
+  3.Set buildpacks to Python and NodeJS in that order.
+  4.Link the Heroku app to the repository on GitHub.
+  5.Click on Deploy.
+
+### Create Repository
+  
+For this I used Github.
+
+ * Go to your profile, and press on "Repositories".
+ * Press "New" (Big green button).
+ * There I chose to use a template from Code Institute to have everything I needed for this project.
+ * Named my project "battleship-game".
+ * Then clicked on "Create repository".
+ * Onces created, I opened the repository and clicked on "Gitpod" to create a new workplace.
+
+### Fork Repository on GitHub
+
+A copy of the GitHub Repository can be made by forking the GitHub account. Changes can be made on this copy without affecting the origional repository.
+
+* Log in to GitHub and locate the repository in question.
+* Locate the Fork button which can be found in the top corner, right-hand side of the page, inline with the repository name.
+* Click this button to create a copy of the origional repository in your GitHub Account.
+
+###  To Clone The Repository on GitHub
+
+* Click on the code button which is underneath the main tab and repository name to the right.
+* In the "Clone with HTTPS' section, click on the clipboard icon to copy the URL.
+* Open Git Bash in your IDE of choice.
+* Change the current working directory to where you wan the cloned directory to be made.
+* Type git clone, and then paste the URL copied form GitHub.
+* Press enter and the clone of your repository will be created.
 ## Credits
 ***
