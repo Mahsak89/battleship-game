@@ -38,6 +38,11 @@ The winner is the player who sinks all of their opponent's battleships first.
 
     
 ### ***future Features***
+* Allow the player to locate the battleships  
+* Allow the player to select the number of  the battleships 
+* Allow the player to choose the length of the battleships
+* Allow the player to choose the board size
+
 
 ## Data Model
 ***
@@ -51,6 +56,9 @@ I have manually tested the project by  doing the following :
 * Passed the code through a PEP8 linter and confirmed that there are no problems
 * Tested my code with invalid inputs: string when numbers are expected,out of range inputs,same input twice and empty inputs
 * Testes in my local terminal and the Code Institute Heroku terminal
+### ***Solved Bugs***
+### ***Remaining Bugs***
+### ***Validator Testing***
 ## Deployment
 ***
 This project was deployed using Code Institute's mock terminal for Heroku. Below are the steps I followed to be able to deploy the terminal to the website:
