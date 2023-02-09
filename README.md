@@ -47,11 +47,11 @@ The winner is the player who sinks all of their opponent's battleships first.
 ***
 This project was deployed using Code Institute's mock terminal for Heroku. Below are the steps I followed to be able to deploy the terminal to the website:
 
-  1.Create a new Heroku app on the Heroku website.
-  2.Set config vars: Port and give it a value of 8000.
-  3.Set buildpacks to Python and NodeJS in that order.
-  4.Link the Heroku app to the repository on GitHub.
-  5.Click on Deploy.
+  1. Create a new Heroku app on the Heroku website.
+  2. Set config vars: Port and give it a value of 8000.
+  3. Set buildpacks to Python and NodeJS in that order.
+  4. Link the Heroku app to the repository on GitHub.
+  5. Click on Deploy.
 
 ### Create Repository
   
@@ -60,7 +60,7 @@ For this I used Github.
  * Go to your profile, and press on "Repositories".
  * Press "New" (Big green button).
  * There I chose to use a template from Code Institute to have everything I needed for this project.
- * Named my project "battleship-game".
+ * Named my project [battleship-game ] (https://github.com/Mahsak89/battleship-game).
  * Then clicked on "Create repository".
  * Onces created, I opened the repository and clicked on "Gitpod" to create a new workplace.
 
