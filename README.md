@@ -41,6 +41,7 @@ The winner is the player who sinks all of their opponent's battleships first.
 
 ## Data Model
 ***
+
 ## Testing
 ***
 ## Deployment
@@ -82,3 +83,8 @@ A copy of the GitHub Repository can be made by forking the GitHub account. Chang
 * Press enter and the clone of your repository will be created.
 ## Credits
 ***
+ * Slack community for information and also the few that helped me with the issues what I got. 
+ * [CodeInstitute](https://learn.codeinstitute.net/courses).
+ * [GreeksforGreeks](https://www.geeksforgeeks.org/indentation-in-python/)
+ * [YouTube](https://www.youtube.com/results?search_query=python+battleship+game)
+ 
