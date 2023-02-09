@@ -76,7 +76,7 @@ For this I used Github.
  * Go to your profile, and press on "Repositories".
  * Press "New" (Big green button).
  * There I chose to use a template from Code Institute to have everything I needed for this project.
- * Named my project [battleship-game ] (https://github.com/Mahsak89/battleship-game).
+ * Named my project [battleship-game ](https://github.com/Mahsak89/battleship-game).
  * Then clicked on "Create repository".
  * Onces created, I opened the repository and clicked on "Gitpod" to create a new workplace.
 
