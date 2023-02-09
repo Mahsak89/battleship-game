@@ -41,6 +41,9 @@ The winner is the player who sinks all of their opponent's battleships first.
 
 ## Data Model
 ***
+I decided to use 2 classes (GameBoard and Battleship) as my models.The game creates 4 instances of GameBoard class to hold the player's and computer's board and guess_board.
+The GameBoard class stores the board and the method of printing the board for the player.
+The Battleship has also methods in relation to the ships and user input : create_ships (randomly place ships in both boards) , get_user_input (get users guesses) , count_ruined_ships (keeo track of the hitted ships)
 
 ## Testing
 ***
