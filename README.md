@@ -57,8 +57,14 @@ I have manually tested the project by  doing the following :
 * Tested my code with invalid inputs: string when numbers are expected,out of range inputs,same input twice and empty inputs
 * Testes in my local terminal and the Code Institute Heroku terminal
 ### ***Solved Bugs***
+* I faced a typeError when I wanted to assign my variables seprately to Battleship.get_user_input() beacuse it returned a tuple.
+* I crossed valueError when the player entered an empty value ,I solve it by adding try and except .
 ### ***Remaining Bugs***
+* No bugs remaining
 ### ***Validator Testing***
+* PEP8
+  * No errors were returned from PEP8online.com
+
 ## Deployment
 ***
 This project was deployed using Code Institute's mock terminal for Heroku. Below are the steps I followed to be able to deploy the terminal to the website:
