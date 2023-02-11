@@ -64,6 +64,7 @@ I have manually tested the project by  doing the following :
 ### ***Validator Testing***
 * PEP8
   * No errors were returned from PEP8online.com
+  ![Image](image/pep8-1.png)
 
 ## Deployment
 ***
