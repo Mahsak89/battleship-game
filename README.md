@@ -24,14 +24,18 @@ The winner is the player who sinks all of their opponent's battleships first.
 * Random board generation
     * ships are randomly placed on both the player and omputer board
     * player can not see where the computer's ships are.
+    ![Image](image/pic3.png)
 * Play against the computer
 * Accepts user input
 * Maintains the number of hitted ships to decide who is the winner
 * Input validation and error-checking
     * The player can not enter coordinates outside the size of the board
     * The player must enter only numbers
-    * The player can not enter the same geuss twice
     * the player can not enter empty input
+     ![Image](image/pic2.png) 
+    * The player can not enter the same geuss twice
+    ![Image](image/pic1.png)
+  
 * Used 2 classess for modeling the game data
 * announce (the game result) the winner to the player
 
