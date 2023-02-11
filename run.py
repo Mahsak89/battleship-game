@@ -75,9 +75,8 @@ class Battleship:
 # create to type of board for each gamer : the guess board
 # and the one with the ships place on it.
 print("THE RULES OFF THE GAME:")
-print("There is 5 hidden ships for both (You and the computer) in the other" +
-      " player board")
-print("Whoever guessess the  location of the whole 5 ships correctly " +
+print("There is 5 hidden ships placed for both (You and the computer)")
+print("Whoever guessess the location of all the 5 ships correctly " +
       "will be the winner.")
 print("If you guess wrongly it will be shown with (-)")
 print("And if you guess correctly it will be shown with (X)")
