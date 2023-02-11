@@ -42,7 +42,7 @@ class Battleship:
     def get_user_input(self):
         while True:
             try:
-                row = input("Enter the row of the ship(1-5): ")
+                row = input("Enter the row of the ship(1-5):\n ")
                 if row in '12345':
                     row = int(row) - 1
                     break
@@ -52,7 +52,7 @@ class Battleship:
                 print('Enter a valid number between 1-5')
         while True:
             try:
-                column = input("Enter the column of the ship(1-5): ")
+                column = input("Enter the column of the ship(1-5):\n ")
                 if column in '12345':
                     column = int(column) - 1
                     break
