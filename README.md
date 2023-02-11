@@ -6,16 +6,13 @@
 
 ![Image](image/Rwd.png)
 
-Battleship is an online strategy board game in which you have to sink the hidden ships of your opponent. Think wisely and use battle tactics to defeat the computer. 
+Battleship is an online strategy board game where you have to sink your opponent's hidden ships. Think smart and use battle tactics to defeat the computer. 
 
 ## How to play
 ***
-Battleship is based on the classic pen and paper game. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Battleship_(game)).
-In this version,the ships are placed randomly for both computer board and the user board.
-the palayer can see where their ships are,demonstrated by an x sign, but they can not see where the computer's ship are.
-Wrong guesses are marked on the board with -.Hits are indicated by X.
-The player and the computer then take turns to make guesses and try to sink each other's battleship.
-The winner is the player who sinks all of their opponent's battleships first.
+Battleship is based on the classic  pen-and-paper game. You can read more about it on [Wikipedia](https://en.wikipedia.org/wiki/Battleship_(game)).
+In this version, the ships are randomly placed on both the computer's and the player's board. The player can see where his ships are, indicated by an X sign, but he cannot see where the computer's ships are. Wrong guesses are marked on the board with -. Hits are indicated by X. The player and the computer then take turns trying to sink each other's battleship. The player who sinks all of the opponent's ships first wins.
+
 ## Features
 ***
 ### ***Existing Features***
@@ -54,7 +51,7 @@ The winner is the player who sinks all of their opponent's battleships first.
 ***
 I decided to use 2 classes (GameBoard and Battleship) as my models.The game creates 4 instances of GameBoard class to hold the player's and computer's board and guess_board.
 The GameBoard class stores the board and the method of printing the board for the player.
-The Battleship has also methods in relation to the ships and user input : create_ships (randomly place ships in both boards) , get_user_input (get users guesses) , count_ruined_ships (keeo track of the hitted ships)
+The Battleship has also methods in relation to the ships and user input : create_ships (randomly place ships in both boards) , get_user_input (get users guesses) , count_ruined_ships (keep track of the hit ships)
 
 ## Testing
 ***
