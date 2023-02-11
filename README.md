@@ -2,7 +2,7 @@
 ***
 [Link for Repository]()
 
-[Link for Life game]()
+[Link for Life game](https://play-battleship.herokuapp.com/)
 
 ![Image](image/Rwd.png)
 
