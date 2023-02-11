@@ -1,6 +1,6 @@
 # Battleship Game
 ***
-[Link for Repository]()
+[Link for Repository](https://github.com/Mahsak89/battleship-game)
 
 [Link for Life game](https://play-battleship.herokuapp.com/)
 
@@ -38,6 +38,8 @@ The winner is the player who sinks all of their opponent's battleships first.
   
 * Used 2 classess for modeling the game data
 * announce (the game result) the winner to the player
+
+![Image](image/pic4.png)
 
 
     
