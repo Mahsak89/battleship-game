@@ -4,7 +4,7 @@
 
 [Link for Life game]()
 
-![Image]()
+![Image](image/Rwd.png)
 
 Battleship is an online strategy board game in which you have to sink the hidden ships of your opponent. Think wisely and use battle tactics to defeat the computer. 
 
