@@ -103,8 +103,8 @@ while True:
         while (player_guess_board.board[player_row][player_column] == "-" or
                player_guess_board.board[player_row][player_column] == "X"):
             print("You guessed that one already")
-            player_row = Battleship.get_user_input(object)
-            player_column = Battleship.get_user_input(object)
+            player_row, player_column = Battleship.get_user_input(object)
+
         # check if the user guesses the ships location correct or not
         if computer_board.board[player_row][player_column] == "X":
             print("You sunk one of my ships!")

@@ -26,7 +26,7 @@ The winner is the player who sinks all of their opponent's battleships first.
     * player can not see where the computer's ships are.
 * Play against the computer
 * Accepts user input
-* Maintains the number of hitted ships
+* Maintains the number of hitted ships to decide who is the winner
 * Input validation and error-checking
     * The player can not enter coordinates outside the size of the board
     * The player must enter only numbers
